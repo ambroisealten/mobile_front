@@ -2,6 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+
+import { OnsenModule } from 'ngx-onsenui';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
 import { TabbarComponent } from './tabbar/tabbar.component';
 
 @NgModule({
@@ -10,7 +14,8 @@ import { TabbarComponent } from './tabbar/tabbar.component';
     TabbarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    OnsenModule
   ],
   providers: [],
   bootstrap: [AppComponent]
