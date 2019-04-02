@@ -1,0 +1,10 @@
+<form class="form-signin">
+  <h1 class="h3 mb-3 font-weight-normal">Inscription</h1>
+  <input type="text" id="inputName" class="form-control" placeholder="nom" [(ngModel)]="userName" name="userName" required autofocus>
+  <input type="text" id="inputFirstname" class="form-control" placeholder="prénom" [(ngModel)]="userFirstName" name="userFirstName" required>
+  <input type="email" id="inputEmail" class="form-control" placeholder="email" [(ngModel)]="userEmail" name="userEmail" required>
+  <input type="password" id="inputPassword" class="form-control" placeholder="mot de passe" [(ngModel)]="userPswd" name="userPswd" required>
+  <input type="password" id="inputPasswordCheck" class="form-control" placeholder="confirmer mot de passe" [(ngModel)]="userPswdCheck" name="userPswdCheck" required>
+  <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="onSignup()">Créer mon compte</button>
+  <p class="message">Déjà un compte ? <a routerLink="/login">Se connecter</a></p>
+</form>
