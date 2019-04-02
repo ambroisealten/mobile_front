@@ -40,7 +40,7 @@
            placeholder="confimer mot de passe">
     <div *ngIf="submitted && f.passwordCheck.errors" class="invalid-feedback">
       <div *ngIf="f.passwordCheck.errors.required">Un mot de passe est requis</div>
-      <div *ngIf="f.passwordCheck.errors.mustMatch">Passwords must match</div>
+      <div *ngIf="f.passwordCheck.errors.mustMatch">Les mots de passe doivent être identiques</div>
     </div>
   </div>
   <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="onSignup()">Créer mon compte</button>
