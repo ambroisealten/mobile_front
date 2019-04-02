@@ -1,15 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-page3',
+  selector: 'ons-page',
   templateUrl: './page3.component.html',
   styleUrls: ['./page3.component.scss']
 })
-export class Page3Component implements OnInit {
+export class Page3Component {
 
   constructor() { }
 
-  ngOnInit() {
-  }
 
 }

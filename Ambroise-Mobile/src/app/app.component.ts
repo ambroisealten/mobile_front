@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { TabbarComponent } from './tabbar/tabbar.component';
-import { splitAtColon } from '@angular/compiler/src/util';
+import { MenuService } from './services/MenuService.service';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +8,12 @@ import { splitAtColon } from '@angular/compiler/src/util';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  tabbar = TabbarComponent;
+  tabBar = TabbarComponent;
   title = 'Ambroise-Mobile';
-  @ViewChild('splitter') splitAtColon;
-
+  @ViewChild('splitter') splitter;
+  constructor(private menuService: MenuService) {
+    this.menuService.menu$.subscribe(() => {
+      this.splitter.nativeElement.side.open();
+    });
+  }
 }
