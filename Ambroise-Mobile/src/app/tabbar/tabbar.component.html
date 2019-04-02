@@ -3,7 +3,8 @@
   <div class="tabbar">
     <!-- <ng-container *ngFor="let link of tabLinkList.mission">
         <p id="{{link.name}}">Test</p>
-        <ons-tab ngLabel="{{lnik.name}}" id="{{link.name}}" ngIicon="ion-home" [page]="link.page"></ons-tab>
+        <ons-tab label="{{link.name}}" icon="ion-home" [page]="link.page"></ons-tab>
+        <ons-tab label="{{link.name}}" icon="{{link.typeIcon}}" [page]="link.page"></ons-tab>
     </ng-container> -->
     <ons-tab label="Missions" icon="ion-home" [page]="tab1" active></ons-tab>
     <ons-tab label="Compétences" icon="ion-ios-browsers" [page]="tab2"></ons-tab>
