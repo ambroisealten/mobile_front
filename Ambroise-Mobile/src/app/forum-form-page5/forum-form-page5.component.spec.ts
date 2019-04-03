@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TabbarComponent } from './tabbar.component';
+import { ForumFormPage5Component } from './forum-form-page5.component';
 
-describe('TabbarComponent', () => {
-  let component: TabbarComponent;
-  let fixture: ComponentFixture<TabbarComponent>;
+describe('ForumFormPage5Component', () => {
+  let component: ForumFormPage5Component;
+  let fixture: ComponentFixture<ForumFormPage5Component>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TabbarComponent ]
+      declarations: [ ForumFormPage5Component ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TabbarComponent);
+    fixture = TestBed.createComponent(ForumFormPage5Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
