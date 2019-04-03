@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-forum-form-page4',
+  selector: 'ons-page',
   templateUrl: './forum-form-page4.component.html',
   styleUrls: ['./forum-form-page4.component.scss']
 })
-export class ForumFormPage4Component implements OnInit {
+export class ForumFormPage4Component {
 
   constructor() { }
 
