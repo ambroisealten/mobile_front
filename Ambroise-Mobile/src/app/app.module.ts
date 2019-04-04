@@ -16,6 +16,7 @@ import { ForumFormPage2Component } from './forum-form-page2/forum-form-page2.com
 import { ForumFormPage3Component } from './forum-form-page3/forum-form-page3.component';
 import { ForumFormPage4Component } from './forum-form-page4/forum-form-page4.component';
 import { ForumFormPage5Component } from './forum-form-page5/forum-form-page5.component';
+import { UiTemplateComponent } from './ui-template/ui-template.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ForumFormPage5Component } from './forum-form-page5/forum-form-page5.com
     ForumFormPage2Component,
     ForumFormPage3Component,
     ForumFormPage4Component,
-    ForumFormPage5Component
+    ForumFormPage5Component,
+    UiTemplateComponent
   ],
   imports: [
     BrowserModule,
