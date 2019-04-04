@@ -23,6 +23,7 @@ import { ForumFormPage4Component } from './forum-form-page4/forum-form-page4.com
 import { ForumFormPage5Component } from './forum-form-page5/forum-form-page5.component';
 import { TabbarCompetenceComponent } from './tabbar-competence/tabbar-competence.component';
 import { CompetenceService } from './competence.service';
+import { HeaderCompetenceMobileComponent } from './header-competence-mobile/header-competence-mobile.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { CompetenceService } from './competence.service';
     ForumFormPage3Component,
     ForumFormPage4Component,
     ForumFormPage5Component,
-    TabbarCompetenceComponent
+    TabbarCompetenceComponent,
+    HeaderCompetenceMobileComponent
   ],
   imports: [
     BrowserModule,

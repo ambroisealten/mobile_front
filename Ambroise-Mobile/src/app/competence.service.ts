@@ -7,8 +7,8 @@ import { HttpHeaders, HttpClient } from '@angular/common/http';
 })
 export class CompetenceService {
 
-  private 
-  getIdentityFromService( ){
+   
+  getIdentityFromService(){
     
   }
   constructor() { }

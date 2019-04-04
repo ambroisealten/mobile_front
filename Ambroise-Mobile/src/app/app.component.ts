@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { TabbarForumComponent } from './tabbar-forum/tabbar-forum.component';
 import { TabbarCompetenceComponent } from './tabbar-competence/tabbar-competence.component';
 import { MenuService } from './services/MenuService.service';
+import { ContentPageComponent } from './content-page/content-page.component';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ import { MenuService } from './services/MenuService.service';
 })
 export class AppComponent {
   tabBar = TabbarCompetenceComponent;
+  sidePage = ContentPageComponent;
   title = 'Ambroise-Mobile';
   @ViewChild('splitter') splitter;
   constructor(private menuService: MenuService) {
