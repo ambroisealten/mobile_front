@@ -62,7 +62,7 @@ a {
   text-align: center;
 }
 :host {
-  background-color: #eceae8;
+  background-color: var(--ALTENLightGray);
   position: absolute;
   left: 0;
   right: 0;

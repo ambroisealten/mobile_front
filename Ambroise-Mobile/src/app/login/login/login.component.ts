@@ -10,7 +10,7 @@ import * as sha512 from 'js-sha512';
 export class LoginComponent implements OnInit {
 
   // used to set validators
-  validatingForm: FormGroup;
+  validationForm: FormGroup;
   submitted = false;
 
   userEmail: string;
@@ -20,14 +20,14 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     // init validators
-    this.validatingForm =this.formBuilder.group({
-      email: ['', [Validators.required, Validators.email]],
+    this.validationForm =this.formBuilder.group({
+      email: ['', [Validators.required, Validators.pattern("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$")]],
       password: ['', [Validators.required]]
     });
   }
 
   // convenience getter for easy access to form fields
-  get f() { return this.validatingForm.controls; }
+  get validationFormControls() { return this.validationForm.controls; }
 
   /**
     Sends http request with email and password when login form is submitted
@@ -36,13 +36,13 @@ export class LoginComponent implements OnInit {
     this.submitted = true;
 
     // stop here if form is invalid
-    if (this.validatingForm.invalid) {
+    if (this.validationForm.invalid) {
       return;
     }
 
     // init values with form
-    this.userEmail = this.validatingForm.value.email;
-    this.userPswd = sha512.sha512(this.validatingForm.value.password);
+    this.userEmail = this.validationForm.value.email;
+    this.userPswd = sha512.sha512(this.validationForm.value.password);
   }
 
 }
