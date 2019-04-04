@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { TabbarForumComponent } from './tabbar-forum/tabbar-forum.component';
 import { MenuService } from './services/MenuService.service';
 import { SideMenuComponent } from './side-menu/side-menu.component';
+import { MenuBurgerComponent } from './menu-burger/menu-burger.component';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ import { SideMenuComponent } from './side-menu/side-menu.component';
 })
 export class AppComponent {
   sideMenu = SideMenuComponent;
+  burgerMenu = MenuBurgerComponent;
   tabBar = TabbarForumComponent;
 
   title = 'Ambroise-Mobile';

@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { OnsenModule } from 'ngx-onsenui';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
-import { ContentPageComponent } from './content-page/content-page.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
+import { MenuBurgerComponent } from './menu-burger/menu-burger.component';
 import { MenuService } from './services/MenuService.service';
 
 import { TabbarForumComponent } from './tabbar-forum/tabbar-forum.component';
@@ -20,8 +20,8 @@ import { ForumFormPage5Component } from './forum-form-page5/forum-form-page5.com
 @NgModule({
   declarations: [
     AppComponent,
-    ContentPageComponent,
     SideMenuComponent,
+    MenuBurgerComponent,
     TabbarForumComponent,
     ForumFormPage1Component,
     ForumFormPage2Component,
@@ -39,8 +39,8 @@ import { ForumFormPage5Component } from './forum-form-page5/forum-form-page5.com
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   entryComponents: [
-    ContentPageComponent,
     SideMenuComponent,
+    MenuBurgerComponent,
     TabbarForumComponent,
     ForumFormPage1Component,
     ForumFormPage2Component,
