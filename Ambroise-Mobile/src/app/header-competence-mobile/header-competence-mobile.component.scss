@@ -2,15 +2,24 @@ div.header {
     background-color: var(--ALTENBlue);
     height: 60%;
     margin: 0%;
-
 }
+
 div.surheader{
 background-color: var(--ALTENLightGray);
     height: 40%;
     margin: 0%;
 }
 
-.img {
+.Share{
+    position: absolute;
+    right: 5%;
+    top: 0;
+    margin-top: 11%;
+    width: 4%;
+}
+
+
+.logo_alten {
 position: absolute;
 left:0;
 overflow: hidden;
@@ -19,3 +28,12 @@ background-color: white;
 width: 8%;
 }
 
+.module{
+    color: var(--ALTENLightGray);
+    font: bold;
+}
+
+.version {
+    color: var(--ALTENLightGray);
+    background-color: var(--ALTENBlue);
+}
