@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-competence-cv',
+  selector: 'ons-page',
   templateUrl: './competence-cv.component.html',
   styleUrls: ['./competence-cv.component.css']
 })

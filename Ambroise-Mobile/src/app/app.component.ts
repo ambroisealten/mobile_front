@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { TabbarForumComponent } from './tabbar-forum/tabbar-forum.component';
+import { TabbarCompetenceComponent } from './tabbar-competence/tabbar-competence.component';
 import { MenuService } from './services/MenuService.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { MenuService } from './services/MenuService.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  tabBar = TabbarForumComponent;
+  tabBar = TabbarCompetenceComponent;
   title = 'Ambroise-Mobile';
   @ViewChild('splitter') splitter;
   constructor(private menuService: MenuService) {

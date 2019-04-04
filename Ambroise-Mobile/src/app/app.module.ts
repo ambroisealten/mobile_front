@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import { CompetenceSkillComponent } from './competence-skill/competence-skill.component';
 import { CompetenceIdentityComponent } from './competence-identity/competence-identity.component';
 import { CompetenceCvComponent } from './competence-cv/competence-cv.component';
-import { CompetenMatriceComponent } from './competen-matrice/competen-matrice.component';
+import { CompetenceMatriceComponent } from './competence-matrice/competence-matrice.component';
+
 
 import { OnsenModule } from 'ngx-onsenui';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
@@ -20,6 +21,7 @@ import { ForumFormPage2Component } from './forum-form-page2/forum-form-page2.com
 import { ForumFormPage3Component } from './forum-form-page3/forum-form-page3.component';
 import { ForumFormPage4Component } from './forum-form-page4/forum-form-page4.component';
 import { ForumFormPage5Component } from './forum-form-page5/forum-form-page5.component';
+import { TabbarCompetenceComponent } from './tabbar-competence/tabbar-competence.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,7 @@ import { ForumFormPage5Component } from './forum-form-page5/forum-form-page5.com
     CompetenceSkillComponent,
     CompetenceIdentityComponent,
     CompetenceCvComponent,
-    CompetenMatriceComponent,
+    CompetenceMatriceComponent,
     ContentPageComponent,
     SideMenuComponent,
     TabbarForumComponent,
@@ -35,7 +37,8 @@ import { ForumFormPage5Component } from './forum-form-page5/forum-form-page5.com
     ForumFormPage2Component,
     ForumFormPage3Component,
     ForumFormPage4Component,
-    ForumFormPage5Component
+    ForumFormPage5Component,
+    TabbarCompetenceComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +57,12 @@ import { ForumFormPage5Component } from './forum-form-page5/forum-form-page5.com
     ForumFormPage2Component,
     ForumFormPage3Component,
     ForumFormPage4Component,
-    ForumFormPage5Component
+    ForumFormPage5Component,
+    CompetenceSkillComponent,
+    CompetenceIdentityComponent,
+    CompetenceCvComponent,
+    CompetenceMatriceComponent,
+    TabbarCompetenceComponent
   ],
 })
 export class AppModule { }

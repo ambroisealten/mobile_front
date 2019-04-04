@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CompetenMatriceComponent } from './competen-matrice.component';
+import { CompetenceMatriceComponent } from './competence-matrice.component';
 
-describe('CompetenMatriceComponent', () => {
-  let component: CompetenMatriceComponent;
-  let fixture: ComponentFixture<CompetenMatriceComponent>;
+describe('CompetenceMatriceComponent', () => {
+  let component: CompetenceMatriceComponent;
+  let fixture: ComponentFixture<CompetenceMatriceComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CompetenMatriceComponent ]
+      declarations: [ CompetenceMatriceComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CompetenMatriceComponent);
+    fixture = TestBed.createComponent(CompetenceMatriceComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
