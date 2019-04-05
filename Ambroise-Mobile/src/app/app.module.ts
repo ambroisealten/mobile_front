@@ -25,6 +25,7 @@ import { TabbarCompetenceComponent } from './tabbar-competence/tabbar-competence
 import { CompetenceService } from './competence.service';
 import { HeaderCompetenceMobileComponent } from './header-competence-mobile/header-competence-mobile.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,11 +42,11 @@ import { HeaderCompetenceMobileComponent } from './header-competence-mobile/head
     ForumFormPage4Component,
     ForumFormPage5Component,
     TabbarCompetenceComponent,
-    HeaderCompetenceMobileComponent
+    HeaderCompetenceMobileComponent,
   ],
   imports: [
     BrowserModule,
-    OnsenModule
+    OnsenModule,
   ],
   providers: [
     MenuService,

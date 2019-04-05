@@ -1,44 +1,23 @@
 <div>
-  <h4>Nom de la fiche - Maxime MAQUINGHEN - Consultant</h4>
+  <h5 class="titre">{{ficheCompetence[0].NameOfFiche}} - {{ficheCompetence[0].NomPersonne}} {{ficheCompetence[0].PrenomPersonne}} - {{ficheCompetence[0].StatutPersonne}}</h5>
   <div>
-    <h6>diplôme:  Plus haut diplome</h6>
-    <h6>Employeur: Alten</h6>
-    <h6>Métier:  Chef de Projet</h6>
-    <h6>Disponibilités:  /</h6>
-    <h6>Année de diplome:  2019</h6>
-    <h6>Salaire:  150K€/an</h6>
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Manager</th>
-            <th scope="col">Date</th>
-            <th scope="col">Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Cyprien</td>
-            <td>Joyce</td>
-            <td>Cyprien</td>
-          </tr>
-          <tr>
-            <td>20/04/2019</td>
-            <td>19/10/2018</td>
-            <td>10/10/2018</td>
-          </tr>
-          <tr>
-            <td>Evalutation Compétence</td>
-            <td>Contrat Consultant</td>
-            <td>Recrutement </td>
-          </tr>
-        </tbody>
-      </table>
-</div>
+   <li>
+      <h4 class="identity">Diplome : {{ ficheCompetence[0].DiplomeFiche }}</h4>
+      <h4 class="identity">Employeur : {{ ficheCompetence[0].EmployeurFiche }}</h4>
+      <h4 class="identity">Métier : {{ ficheCompetence[0].metierFiche }}</h4>
+      <h4 class="identity">Disponibilités : {{ ficheCompetence[0].DisponibiliteFiche }}</h4>
+      <h4 class="identity">Année de Diplome : {{ ficheCompetence[0].AnneediplomeFiche }}</h4>
+      <h4 class="identity">Salaire : {{ ficheCompetence[0].SalaireFiche }}</h4>
+    </li>
 <div>
-  <h6>Avis</h6>
-  <div class="encart">
-      +++ 
-      </div>
+  <h4 class="Avis">Avis</h4>
+  <div class="Avis">
+    {{ficheCompetence[0].AvisFiche}}
+  </div>
+  <h4 class="Avis">Commentaire</h4>
+  <div class="Avis">
+    {{ficheCompetence[0].CommentaireFiche}}
+  </div>
 </div>
   
 

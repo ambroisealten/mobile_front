@@ -1,45 +1,47 @@
 <div>
-  <h4>Compétences</h4>
-  <div>
-    <table class="tableCompetence">
-        <thead>
-          <tr>
-            <th scope="col">Nom</th>
-            <th scope="col">Note</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Python</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>C++</td>
-            <td>3</td>
-          </tr>
-        </tbody>
-      </table>
+  <h4 class="titre">Compétences</h4>
+  <div class="tableau">
+      <div class="tabSkill title">
+        <p>Nom de compétence</p>
+        <p>Note</p>
+      </div>
+      <ng-container *ngFor="let SkillCompetence of SkillCompetence; let i = index">
+        <ng-container *ngIf="i % 2 === 0">
+        <div class="tabSkill even">
+          <p>{{SkillCompetence.name}}</p>
+          <p>{{SkillCompetence.note}}</p>
+        </div>
+        </ng-container>
+      <ng-container *ngIf="i % 2 === 1">
+        <div class="tabSkill odd">
+            <p>{{SkillCompetence.name}}</p>
+            <p>{{SkillCompetence.note}}</p>
+          </div>
+      </ng-container>
+      </ng-container>
 </div>
 <div>
-    <h4>SoftSkill</h4>
-  <table class="tableSoftSkill">
-    <thead>
-      <tr>
-        <th scope="col">Nom</th>
-        <th scope="col">Note</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Cycle en V </td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>Gestion de projet </td>
-        <td>3</td>
-      </tr>
-    </tbody>
-  </table>
+    <h4 class="titre">SoftSkill</h4>
+      <div class="tableau">
+          <div class="tabSkill title">
+            <p>Nom du SoftSkill</p>
+            <p>Note</p>
+          </div>
+          <ng-container *ngFor="let SoftSkillCompetence of SoftSkillCompetence; let i = index">
+            <ng-container *ngIf="i % 2 === 0">
+            <div class="tabSkill even">
+              <p>{{SoftSkillCompetence.name}}</p>
+              <p>{{SoftSkillCompetence.note}}</p>
+            </div>
+            </ng-container>
+          <ng-container *ngIf="i % 2 === 1">
+            <div class="tabSkill odd">
+                <p>{{SoftSkillCompetence.name}}</p>
+                <p>{{SoftSkillCompetence.note}}</p>
+              </div>
+          </ng-container>
+          </ng-container>
+    </div>
 </div>
 </div>
   

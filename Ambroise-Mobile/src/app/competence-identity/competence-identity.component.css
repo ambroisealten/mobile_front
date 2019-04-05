@@ -1,0 +1,18 @@
+.titre {
+    text-align: center;
+    color: var(--ALTENDarkBlue);
+}
+.identity{
+    
+    text-align: left;
+    margin-left: 10%;
+    font-size: 20px;
+    /*font-weight: normal;*/
+    color: var(--ALTENDarkBlue);
+}
+
+.Avis {
+    text-align: center;
+    font-size: 20px;
+    color: var(--ALTENBlue);
+}

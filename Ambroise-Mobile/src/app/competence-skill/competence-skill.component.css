@@ -1,0 +1,30 @@
+.titre {
+    text-align: left;
+    border-bottom: solid 2px var(--ALTENBlue);
+    border-top: solid 2px var(--ALTENBlue);
+    color: var(--ALTENDarkBlue);
+}
+
+.tabSkill{
+    display: grid;
+    grid-template-columns: 6fr 4fr;   
+    border-bottom: solid 1px var(--ALTENBlue);
+}
+
+.even{
+    background-color: var(--ALTENLightBlue);
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    /*background-color: rgba(var(--ALTENLightBlue), 0.85);*/
+}
+
+.odd {
+    background-color: var(--ALTENBlue);
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
+}
+
+.title {
+    color:white;
+    background-color: var(--ALTENMarinBlue);
+    opacity: 0.90;
+}

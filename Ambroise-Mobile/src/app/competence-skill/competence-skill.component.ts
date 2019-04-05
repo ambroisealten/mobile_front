@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CompetenceService } from '../competence.service';
 
 @Component({
   selector: 'ons-page',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompetenceSkillComponent implements OnInit {
 
-  constructor() { }
+  SkillCompetence: any[];
+  SoftSkillCompetence: any[];
+
+  constructor(private competenceService: CompetenceService) { }
 
   ngOnInit() {
+    this.SkillCompetence = this.competenceService.SkillCompetence;
+    console.log(this.SkillCompetence[1]);
+    this.SoftSkillCompetence = this.competenceService.SoftSkillCompetence;
+
   }
 
 }

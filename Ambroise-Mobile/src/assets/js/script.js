@@ -46,6 +46,8 @@ function createMatrix(chartId, labels, data){
         }]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio: true,
         scales: {
             
         }
