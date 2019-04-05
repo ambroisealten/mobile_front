@@ -1,9 +1,14 @@
 .titre {
     text-align: center;
     color: var(--ALTENDarkBlue);
+    border-bottom: solid 1px var(--ALTENBlue);
+    
+    text-align: left;
+    border-bottom: solid 2px var(--ALTENBlue);
+    border-top: solid 2px var(--ALTENBlue);
+    color: var(--ALTENDarkBlue);
 }
 .identity{
-    
     text-align: left;
     margin-left: 10%;
     font-size: 20px;

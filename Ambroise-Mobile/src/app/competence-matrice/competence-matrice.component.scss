@@ -1,3 +1,15 @@
 h2 {
-    text-align: center
+    text-align: center;
+    border-bottom: solid 2px var(--ALTENBlue);
+    border-top: solid 2px var(--ALTENBlue);
+    color: var(--ALTENDarkBlue);
+}
+
+.competence {
+    width: 60%; 
+    height: 60%;
+}
+
+canvas{
+    margin-left: 45%;
 }

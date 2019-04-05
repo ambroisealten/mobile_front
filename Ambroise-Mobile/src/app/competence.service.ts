@@ -9,7 +9,7 @@ export class CompetenceService {
 
   ficheCompetence =  [
     {
-      NameOfFiche: "010718MM",
+      NameOfFiche: "MMA010718MM",
       NomPersonne: "MAQUINGHEN",
       PrenomPersonne: "Maxime",
       StatutPersonne: "consultant",
@@ -21,6 +21,12 @@ export class CompetenceService {
       SalaireFiche: "15000€/an",
       AvisFiche: "+++",
       CommentaireFiche: "très correct à engager en urgence",
+      /*
+      {
+      name: 'Nom de la fiche ',
+      data: "010718MM",
+    }, ...
+      */
     }
   ];
 
@@ -35,7 +41,7 @@ export class CompetenceService {
     },
     {
       name: "Angular",
-      note: "2",
+      note: "3",
     }
   ];
 

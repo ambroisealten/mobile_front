@@ -2,14 +2,12 @@
     height: 10%;
 }
 
-.left{
+.left, .right, .toolbar--material__left:empty, .toolbar--material__right:empty{
     width: 0;
+    min-width: 0;
 }
 
 .center{
     width: 100%;
 }
 
-.right{
-    width: 0;
-}

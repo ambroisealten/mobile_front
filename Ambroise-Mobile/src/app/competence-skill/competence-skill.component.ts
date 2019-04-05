@@ -4,7 +4,7 @@ import { CompetenceService } from '../competence.service';
 @Component({
   selector: 'ons-page',
   templateUrl: './competence-skill.component.html',
-  styleUrls: ['./competence-skill.component.css']
+  styleUrls: ['./competence-skill.component.scss']
 })
 export class CompetenceSkillComponent implements OnInit {
 
@@ -15,7 +15,6 @@ export class CompetenceSkillComponent implements OnInit {
 
   ngOnInit() {
     this.SkillCompetence = this.competenceService.SkillCompetence;
-    console.log(this.SkillCompetence[1]);
     this.SoftSkillCompetence = this.competenceService.SoftSkillCompetence;
 
   }
