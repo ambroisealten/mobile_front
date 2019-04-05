@@ -64,6 +64,17 @@ export class CompetenceService {
 
   };
 
+  versionFiche = [
+    {
+      name: 'Mars 2019',
+    },
+    {
+      name: 'Février 2018',
+    },
+    {
+      name: 'Janvier 2018',
+    }
+  ];
   
   constructor(/*private httpClient: HttpClient*/) { }
 
@@ -80,7 +91,7 @@ export class CompetenceService {
     //this.ficheCompetence = "toto"//requete;
 */
   getSkillFromService(){
-
+    
   }
 
   getSoftSkillFromService(){
@@ -91,7 +102,16 @@ export class CompetenceService {
 
   }
 
-  getCvfromService(){
+  getCvFromService(){
+
+  }
+
+  getVersionSelectionFromService() {
+
+  }
+
+  getVersionFromService(Version) {
+    console.log(Version);
 
   }
 }

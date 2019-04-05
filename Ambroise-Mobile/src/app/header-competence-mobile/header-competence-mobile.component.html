@@ -1,13 +1,11 @@
 <div class="header">
     <h2 class="module">Module compétence</h2>
-    <img class="logo_alten" src='../../assets/images/header-logo-alten.svg'/>
+    <img class="logo_alten" (click)="leftMenu()" src='../../assets/images/header-logo-alten.svg'/>
 </div>
 <div class="surheader">
-    <select class="version">
-        <option value="0">Mars 2019</option>
-        <option value="1">Septembre 2018</option>
-    </select>
-
-    <input type="image" class="Share" src="../../assets/images/share.png"/>
+    <select (change)="onChange($event.target.value)" class="version">
+            <option *ngFor='let versionFiche of versionFiche; let i = index;' > {{i}}. {{versionFiche.name}} </option>
+        </select>
+    <input (click)="onPartage()" type="image" class="Share" src="../../assets/images/share.png"/>
 </div>
       
