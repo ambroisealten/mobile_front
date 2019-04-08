@@ -16,7 +16,6 @@ export class CompetenceSkillComponent implements OnInit {
   ngOnInit() {
     this.SkillCompetence = this.competenceService.SkillCompetence;
     this.SoftSkillCompetence = this.competenceService.SoftSkillCompetence;
-
   }
 
 }

@@ -17,19 +17,20 @@ export class HeaderCompetenceMobileComponent implements OnInit {
   }
 
   onPartage(){
-    console.log("lol");
+    // Appel de la fonction CORDOVA pour le partage
   }
 
   leftMenu() {
-    console.log("ok");
+    // 
+    // Appel de la fonction d'ouverture du menu 
   }
 
   getVersionFiche(Version) {
     this.competenceService.getVersionFromService(Version);
   }
 
+  
   ngOnInit() {
     this.versionFiche = this.competenceService.versionFiche;
   }
-
 }

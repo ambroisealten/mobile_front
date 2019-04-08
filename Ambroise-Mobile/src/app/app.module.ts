@@ -26,6 +26,7 @@ import { CompetenceService } from './competence.service';
 import { HeaderCompetenceMobileComponent } from './header-competence-mobile/header-competence-mobile.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +51,7 @@ import { HeaderCompetenceMobileComponent } from './header-competence-mobile/head
   ],
   providers: [
     MenuService,
-    CompetenceService
+    CompetenceService,
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

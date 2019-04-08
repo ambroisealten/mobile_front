@@ -1,10 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { HttpHeaders, HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
+
+/*
+  Class d'envois et de réception de données depuis le serveur 
+*/
 export class CompetenceService {
 
   ficheCompetence =  [
@@ -75,11 +78,12 @@ export class CompetenceService {
       name: 'Janvier 2018',
     }
   ];
-  
-  constructor(/*private httpClient: HttpClient*/) { }
+  //API_URL: string = "/api/";
+
+  constructor(/*private http: HttpClient*/) { }
 
   /*getIdentityFromService(callback){
-    this.httpClient
+    this.http
         .get('http://localhost:4200/')
         .subscribe(data => {
           callback(JSON.stringify(data));
@@ -87,11 +91,11 @@ export class CompetenceService {
           console.log(error);
         });
       }
-      
+    */  
     //this.ficheCompetence = "toto"//requete;
-*/
-  getSkillFromService(){
-    
+
+  getSkillFromService(/*callback   mail, nameOfFiche*/){
+    //this.SkillCompetence == this.http.get(this.API_URL + 'skill/' + mail + nameOfFiche);
   }
 
   getSoftSkillFromService(){
@@ -112,6 +116,6 @@ export class CompetenceService {
 
   getVersionFromService(Version) {
     console.log(Version);
-
   }
+
 }
