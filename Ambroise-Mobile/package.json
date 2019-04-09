@@ -21,6 +21,7 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
+    "boostrap": "^2.0.0",
     "bootstrap": "^3.4.1",
     "core-js": "^2.5.4",
     "ngx-onsenui": "^7.0.0",

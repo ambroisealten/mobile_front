@@ -17,9 +17,9 @@ export class AppComponent {
   title = 'Ambroise-Mobile';
   @ViewChild('splitter') splitter;
   constructor(private menuService: MenuService) {
+    LoggerService.parseLogType(environment.globalLogType);
     this.menuService.menu$.subscribe(() => {
       this.splitter.nativeElement.side.open();
     });
-    LoggerService.parseLogType(environment.globalLogType);
   }
 }
