@@ -5,11 +5,24 @@ import { ForumFormPage3Component } from '../forum-form-page3/forum-form-page3.co
 import { ForumFormPage4Component } from '../forum-form-page4/forum-form-page4.component';
 import { ForumFormPage5Component } from '../forum-form-page5/forum-form-page5.component';
 
+export class TabLink {
+  name : string;
+  typeIcon : string;
+  page : any;
+
+  constructor (name : string, typeIcon : string, page) {
+    this.name = name;
+    this.typeIcon = typeIcon;
+    this.page = page;
+  }
+}
+
 @Component({
   selector: 'ons-page',
   templateUrl: './tabbar-forum.component.html',
   styleUrls: ['./tabbar-forum.component.scss']
 })
+
 export class TabbarForumComponent {
   forumTab1 = ForumFormPage1Component;
   forumTab2 = ForumFormPage2Component;
@@ -18,4 +31,13 @@ export class TabbarForumComponent {
   forumTab5 = ForumFormPage5Component;
   
   constructor() { }
+  tabLinkList = {
+    "mission" : [
+      new TabLink("Mobilité", "assets/images/téléchargement.png", this.forumTab1),
+      new TabLink("Canard", "assets/images/téléchargement.png", this.forumTab2),
+      new TabLink("Poulet", "assets/images/téléchargement.png", this.forumTab3),
+      new TabLink("Cochon", "assets/images/téléchargement.png", this.forumTab4),
+      new TabLink("Dinde", "assets/images/téléchargement.png", this.forumTab5),
+    ]
+  }
 }
