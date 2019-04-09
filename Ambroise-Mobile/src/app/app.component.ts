@@ -3,6 +3,8 @@ import { TabbarForumComponent } from './tabbar-forum/tabbar-forum.component';
 import { TabbarCompetenceComponent } from './tabbar-competence/tabbar-competence.component';
 import { MenuService } from './services/MenuService.service';
 import { ContentPageComponent } from './content-page/content-page.component';
+import { LoggerService, LogLevel } from './services/logger.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -18,5 +20,6 @@ export class AppComponent {
     this.menuService.menu$.subscribe(() => {
       this.splitter.nativeElement.side.open();
     });
+    LoggerService.parseLogType(environment.globalLogType);
   }
 }
