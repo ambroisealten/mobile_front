@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { LoggerService, LogLevel } from './services/logger.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  constructor() {}
+  constructor() {
+    LoggerService.parseLogType(environment.globalLogType);
+    LoggerService.log("PROD", LogLevel.PROD);
+    LoggerService.log("JOKE", LogLevel.JOKE);
+  }
 }
