@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CompetenceService } from '../services/competence.service';
+import { LoggerService, LogLevel } from '../services/logger.service';
+import { ficheCompetence } from '../class/ficheCompetence';
 
 @Component({
   selector: 'ons-page',
@@ -8,22 +10,24 @@ import { CompetenceService } from '../services/competence.service';
 })
 export class CompetenceIdentityComponent implements OnInit {
 
-  ficheCompetence: any[];
-
+  ficheCompetence: ficheCompetence;
   versionID: string;
   version: string;
 
   constructor(private competenceService: CompetenceService) { }
 
   setIdentity(id){
-    console.log("je viens bien ici");
+    LoggerService.log("ça passe ici", LogLevel.JOKE);
     this.competenceService.getFicheCompetence(id);
   }
 
   ngOnInit() {
-    this.ficheCompetence = this.competenceService.getFicheCompetence(1);
+    //this.ficheCompetence = this.competenceService.getFicheCompetence(1);
     //version = 
-    //this.competenceService.currentSource.subscribe(this.versionID = "1");
+    console.log("ok");
+
+    this.competenceService.currentSource.subscribe(data => {var tmp = Object.assign(ficheCompetence,this.competenceService.getFicheCompetence(data)); this.ficheCompetence = new ficheCompetence(tmp);});
+    console.log(this.ficheCompetence);
     //this.ficheCompetence = this.competenceService.getFicheCompetence(1);
   }
 

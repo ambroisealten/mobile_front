@@ -1,22 +1,23 @@
 import { Injectable } from '@angular/core';
 import { Observable, BehaviorSubject  } from 'rxjs';
+import { LoggerService, LogLevel } from './logger.service';
+import { CompetenceIdentityComponent } from '../competence-identity/competence-identity.component';
+import { ficheCompetence } from '../class/ficheCompetence';
 
 @Injectable({
   providedIn: 'root'
 })
 
-/*
-  Class d'envois et de réception de données depuis le serveur 
-*/
 export class CompetenceService {
 
-  private versionSource = new BehaviorSubject("allo");
+  private versionSource = new BehaviorSubject(1);
   currentSource = this.versionSource.asObservable();
 
-
   changeSource(version) {
-    console.log(version);
+    version = this.getVersionSelectionFromService(version);
+    LoggerService.log("this.versionSource Avant  : " + this.versionSource.value, LogLevel.JOKE);
     this.versionSource.next(version);
+    LoggerService.log("this.versionSource Après  : " + this.versionSource.value, LogLevel.JOKE);
   }
 
   ficheCompetence =  [
@@ -121,7 +122,9 @@ export class CompetenceService {
   ];
   //API_URL: string = "/api/";
 
-  constructor(/*private http: HttpClient*/) { }
+  constructor(/*private http: HttpClient*/) {
+    //console.log(this.getFicheCompetence(1));
+   }
 
   /*getIdentityFromService(callback){
     this.http
@@ -136,8 +139,8 @@ export class CompetenceService {
     //this.ficheCompetence = "toto"//requete;
 
   getFicheCompetence(id){
-    //this.versionSource.next(id);
-    return this.ficheCompetence[id-1];
+    var fiche =  new ficheCompetence(this.ficheCompetence[id-1]);
+    return fiche;
   }
 
   getSkillFromService(/*callback   mail, nameOfFiche*/){
@@ -174,4 +177,6 @@ export class CompetenceService {
     return (this.versionFiche);
   }
 
+  ngOnInit() {
+  }
 }
