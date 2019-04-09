@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CompetenceService } from '../competence.service';
+import { CompetenceService } from '../services/competence.service';
 import { CompetenceIdentityComponent } from '../competence-identity/competence-identity.component';
 
 

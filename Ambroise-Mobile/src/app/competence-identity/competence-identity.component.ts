@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CompetenceService } from '../competence.service';
+import { CompetenceService } from '../services/competence.service';
 
 @Component({
   selector: 'ons-page',
@@ -23,7 +23,7 @@ export class CompetenceIdentityComponent implements OnInit {
   ngOnInit() {
     this.ficheCompetence = this.competenceService.getFicheCompetence(1);
     //version = 
-    this.competenceService.currentSource.subscribe(this.versionID = "1");
+    //this.competenceService.currentSource.subscribe(this.versionID = "1");
     //this.ficheCompetence = this.competenceService.getFicheCompetence(1);
   }
 

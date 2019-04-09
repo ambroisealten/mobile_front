@@ -11,18 +11,10 @@ import { CompetenceMatriceComponent } from './competence-matrice/competence-matr
 import { OnsenModule } from 'ngx-onsenui';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
-import { ContentPageComponent } from './content-page/content-page.component';
-import { SideMenuComponent } from './side-menu/side-menu.component';
-import { MenuService } from './services/MenuService.service';
 
-import { TabbarForumComponent } from './tabbar-forum/tabbar-forum.component';
-import { ForumFormPage1Component } from './forum-form-page1/forum-form-page1.component';
-import { ForumFormPage2Component } from './forum-form-page2/forum-form-page2.component';
-import { ForumFormPage3Component } from './forum-form-page3/forum-form-page3.component';
-import { ForumFormPage4Component } from './forum-form-page4/forum-form-page4.component';
-import { ForumFormPage5Component } from './forum-form-page5/forum-form-page5.component';
+
 import { TabbarCompetenceComponent } from './tabbar-competence/tabbar-competence.component';
-import { CompetenceService } from './competence.service';
+import { CompetenceService } from './services/competence.service';
 import { HeaderCompetenceMobileComponent } from './header-competence-mobile/header-competence-mobile.component';
 
 
@@ -34,14 +26,6 @@ import { HeaderCompetenceMobileComponent } from './header-competence-mobile/head
     CompetenceIdentityComponent,
     CompetenceCvComponent,
     CompetenceMatriceComponent,
-    ContentPageComponent,
-    SideMenuComponent,
-    TabbarForumComponent,
-    ForumFormPage1Component,
-    ForumFormPage2Component,
-    ForumFormPage3Component,
-    ForumFormPage4Component,
-    ForumFormPage5Component,
     TabbarCompetenceComponent,
     HeaderCompetenceMobileComponent,
   ],
@@ -50,20 +34,11 @@ import { HeaderCompetenceMobileComponent } from './header-competence-mobile/head
     OnsenModule,
   ],
   providers: [
-    MenuService,
     CompetenceService,
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   entryComponents: [
-    ContentPageComponent,
-    SideMenuComponent,
-    TabbarForumComponent,
-    ForumFormPage1Component,
-    ForumFormPage2Component,
-    ForumFormPage3Component,
-    ForumFormPage4Component,
-    ForumFormPage5Component,
     CompetenceSkillComponent,
     CompetenceIdentityComponent,
     CompetenceCvComponent,
