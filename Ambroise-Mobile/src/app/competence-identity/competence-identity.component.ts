@@ -10,10 +10,21 @@ export class CompetenceIdentityComponent implements OnInit {
 
   ficheCompetence: any[];
 
+  versionID: string;
+  version: string;
+
   constructor(private competenceService: CompetenceService) { }
 
+  setIdentity(id){
+    console.log("je viens bien ici");
+    this.competenceService.getFicheCompetence(id);
+  }
+
   ngOnInit() {
-    this.ficheCompetence = this.competenceService.ficheCompetence;
+    this.ficheCompetence = this.competenceService.getFicheCompetence(1);
+    //version = 
+    this.competenceService.currentSource.subscribe(this.versionID = "1");
+    //this.ficheCompetence = this.competenceService.getFicheCompetence(1);
   }
 
 }

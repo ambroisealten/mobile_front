@@ -1,20 +1,20 @@
 <div>
-  <h5 class="titre">{{ ficheCompetence[0].NameOfFiche }} <br> {{ ficheCompetence[0].NomPersonne }} {{ ficheCompetence[0].PrenomPersonne }} - {{ ficheCompetence[0].StatutPersonne }}</h5>
+  <h5 class="titre">{{ ficheCompetence.NameOfFiche }} <br> {{ ficheCompetence.NomPersonne }} {{ ficheCompetence.PrenomPersonne }} - {{ ficheCompetence.StatutPersonne }}</h5>
   <div>
-      <h4 class="identity">Diplome : {{ ficheCompetence[0].DiplomeFiche }}</h4>
-      <h4 class="identity">Employeur : {{ ficheCompetence[0].EmployeurFiche }}</h4>
-      <h4 class="identity">Métier : {{ ficheCompetence[0].metierFiche }}</h4>
-      <h4 class="identity">Disponibilités : {{ ficheCompetence[0].DisponibiliteFiche }}</h4>
-      <h4 class="identity">Année de Diplome : {{ ficheCompetence[0].AnneediplomeFiche }}</h4>
-      <h4 class="identity">Salaire : {{ ficheCompetence[0].SalaireFiche }}</h4>
+      <h4 class="identity">Diplome : {{ ficheCompetence.DiplomeFiche }}</h4>
+      <h4 class="identity">Employeur : {{ ficheCompetence.EmployeurFiche }}</h4>
+      <h4 class="identity">Métier : {{ ficheCompetence.metierFiche }}</h4>
+      <h4 class="identity">Disponibilités : {{ ficheCompetence.DisponibiliteFiche }}</h4>
+      <h4 class="identity">Année de Diplome : {{ ficheCompetence.AnneediplomeFiche }}</h4>
+      <h4 class="identity">Salaire : {{ ficheCompetence.SalaireFiche }}</h4>
 <div class="separateur">
   <h4 class="titre">Avis</h4>
   <div class="Avis">
-    {{ficheCompetence[0].AvisFiche}}
+    {{ficheCompetence.AvisFiche}}
   </div>
   <h4 class="titre">Commentaire</h4>
   <div class="Avis">
-    {{ficheCompetence[0].CommentaireFiche}}
+    {{ficheCompetence.CommentaireFiche}}
   </div>
 </div>
   
