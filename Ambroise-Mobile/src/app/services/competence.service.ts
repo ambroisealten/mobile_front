@@ -15,9 +15,7 @@ export class CompetenceService {
 
   changeSource(version) {
     version = this.getVersionSelectionFromService(version);
-    LoggerService.log("this.versionSource Avant  : " + this.versionSource.value, LogLevel.JOKE);
     this.versionSource.next(version);
-    LoggerService.log("this.versionSource Après  : " + this.versionSource.value, LogLevel.JOKE);
   }
 
   ficheCompetence =  [
@@ -56,7 +54,7 @@ export class CompetenceService {
       NameOfFiche: "MMA01083MM",
       NomPersonne: "MAQUINGHEM",
       PrenomPersonne: "Maxime",
-      StatutPersonne: "Candidat",
+      StatutPersonne: "MDR",
       DiplomeFiche: "Epitech",
       EmployeurFiche: "/",
       metierFiche: "Developpeur",
@@ -139,8 +137,12 @@ export class CompetenceService {
     //this.ficheCompetence = "toto"//requete;
 
   getFicheCompetence(id){
-    var fiche =  new ficheCompetence(this.ficheCompetence[id-1]);
-    return fiche;
+    for(let i = 0; i<this.ficheCompetence.length;i++){
+      if(this.ficheCompetence[i].id == id){
+        return new ficheCompetence(this.ficheCompetence[i]);
+      }
+    }
+    return null;
   }
 
   getSkillFromService(/*callback   mail, nameOfFiche*/){

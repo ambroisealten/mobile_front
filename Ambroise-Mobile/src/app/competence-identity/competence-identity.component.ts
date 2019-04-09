@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, ChangeDetectorRef } from '@angular/core';
 import { CompetenceService } from '../services/competence.service';
 import { LoggerService, LogLevel } from '../services/logger.service';
 import { ficheCompetence } from '../class/ficheCompetence';
@@ -14,21 +14,18 @@ export class CompetenceIdentityComponent implements OnInit {
   versionID: string;
   version: string;
 
-  constructor(private competenceService: CompetenceService) { }
-
-  setIdentity(id){
-    LoggerService.log("ça passe ici", LogLevel.JOKE);
-    this.competenceService.getFicheCompetence(id);
+  constructor(private competenceService: CompetenceService, private change:ChangeDetectorRef) { 
   }
 
   ngOnInit() {
-    //this.ficheCompetence = this.competenceService.getFicheCompetence(1);
+    this.competenceService.currentSource.subscribe((data) => { this.updateData(data) ;this.change.detectChanges()});
     //version = 
-    console.log("ok");
-
-    this.competenceService.currentSource.subscribe(data => {var tmp = Object.assign(ficheCompetence,this.competenceService.getFicheCompetence(data)); this.ficheCompetence = new ficheCompetence(tmp);});
-    console.log(this.ficheCompetence);
     //this.ficheCompetence = this.competenceService.getFicheCompetence(1);
+  }
+
+  updateData(data){
+    this.ficheCompetence =  this.competenceService.getFicheCompetence(data);
+    //this.change.detectChanges();
   }
 
 }

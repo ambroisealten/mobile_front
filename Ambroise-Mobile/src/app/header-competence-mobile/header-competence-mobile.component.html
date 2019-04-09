@@ -4,7 +4,7 @@
 </div>
 <div class="surheader">
     <select (change)="onChange($event.target.value)" class="version">
-            <option id="{{i+1}}" *ngFor='let versionsFiche of versionsFiche; let i = index;' > {{versionsFiche.name}} </option>
+            <option id="{{i}}" *ngFor='let versionsFiche of versionsFiche; let i = index;' > {{versionsFiche.name}} </option>
         </select>
     <input (click)="onPartage()" type="image" class="Share" src="../../assets/images/share.png"/>
 </div>
