@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-sm bg-blue fixed-bottom">
-  <ul class="navbar-nav">
+<nav class="navbar navbar-expand-sm bg-blue fixed-bottom container">
+  <ul class="navbar-nav row">
     <ng-container *ngFor="let link of tabLinkList.mission">
-        <li class="nav-item active nav-item-center">
+        <li class="nav-item active nav-item-center col">
             <a class="nav-link icon-align-bellow" href="{{link.page}}">
               <figure>
                 <img src="{{link.typeIcon}}" alt="Logo" style="width:40px;">
