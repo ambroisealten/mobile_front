@@ -3,6 +3,8 @@ import { Observable, BehaviorSubject  } from 'rxjs';
 import { LoggerService, LogLevel } from './logger.service';
 import { CompetenceIdentityComponent } from '../competence-identity/competence-identity.component';
 import { ficheCompetence } from '../class/ficheCompetence';
+//import { ficheSkill } from '../class/ficheSkill';
+
 
 @Injectable({
   providedIn: 'root'
@@ -68,7 +70,6 @@ export class CompetenceService {
 
   SkillCompetence = [
     {
-      id: '1',
       name: 'python',
       note: "4",
     },
@@ -79,6 +80,18 @@ export class CompetenceService {
     {
       name: "Angular",
       note: "3",
+    },
+    {
+      name: 'PHP',
+      note: "3",
+    },
+    {
+      name: 'JavaEE',
+      note: "2",
+    },
+    {
+      name: "MongoDB",
+      note: "1",
     }
   ];
 
@@ -118,23 +131,10 @@ export class CompetenceService {
       test : "KYKY"
     }
   ];
-  //API_URL: string = "/api/";
 
-  constructor(/*private http: HttpClient*/) {
-    //console.log(this.getFicheCompetence(1));
+  constructor() {
    }
 
-  /*getIdentityFromService(callback){
-    this.http
-        .get('http://localhost:4200/')
-        .subscribe(data => {
-          callback(JSON.stringify(data));
-        },  error => {
-          console.log(error);
-        });
-      }
-    */  
-    //this.ficheCompetence = "toto"//requete;
 
   getFicheCompetence(id){
     for(let i = 0; i<this.ficheCompetence.length;i++){
@@ -145,12 +145,12 @@ export class CompetenceService {
     return null;
   }
 
-  getSkillFromService(/*callback   mail, nameOfFiche*/){
-    //this.SkillCompetence == this.http.get(this.API_URL + 'skill/' + mail + nameOfFiche);
+  getSkillFromService(id){
+    return this.SkillCompetence;
   }
 
-  getSoftSkillFromService(){
-
+  getSoftSkillFromService(id){
+    return this.SoftSkillCompetence;
   }
 
   getMatriceFromService(){
@@ -162,7 +162,6 @@ export class CompetenceService {
   }
 
   getDataFromVersion(version){
-    // retourne la data de la fiche.
     return version;
   }
 
@@ -170,7 +169,6 @@ export class CompetenceService {
     for(let i = 0; i < this.versionFiche.length;i++){
       if(this.versionFiche[i].name == Version){
         return this.versionFiche[i].id;
-        //return this.versionFiche[i].id;
       }
     }
   }

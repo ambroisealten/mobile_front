@@ -15,7 +15,6 @@ function charged(){
 }
 
 function test(event){
-    console.log("Bonjour");
     let parentNode = event.target.parentNode;
     while(parentNode.nodeName != "ONS-LIST-ITEM"){
         parentNode = parentNode.parentNode;

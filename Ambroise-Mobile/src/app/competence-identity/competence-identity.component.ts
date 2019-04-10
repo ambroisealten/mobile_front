@@ -19,13 +19,10 @@ export class CompetenceIdentityComponent implements OnInit {
 
   ngOnInit() {
     this.competenceService.currentSource.subscribe((data) => { this.updateData(data) ;this.change.detectChanges()});
-    //version = 
-    //this.ficheCompetence = this.competenceService.getFicheCompetence(1);
   }
 
   updateData(data){
     this.ficheCompetence =  this.competenceService.getFicheCompetence(data);
-    //this.change.detectChanges();
   }
 
 }
