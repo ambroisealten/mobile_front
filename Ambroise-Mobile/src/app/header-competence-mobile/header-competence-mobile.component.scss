@@ -1,0 +1,46 @@
+div.header {
+    background-color: var(--ALTENBlue);
+    text-align: center;
+}
+
+div.surheader{
+background-color: var(--ALTENLightGray);
+    display: grid;
+    grid-template-columns:  repeat(3,1fr);
+    grid-column-gap: 50px;
+    height: 50%;
+}
+
+.Share{
+    grid-column: 3/3;
+    width: 24%;
+    max-height: 25px;
+    max-width: 35px;
+}
+
+
+.logo_alten {
+position: absolute;
+top: 0;
+left:0;
+overflow: hidden;
+margin: 2% 0 0 2%;
+background-color: white;
+width: 8%;
+}
+
+.module{
+    color: var(--ALTENLightGray);
+    margin-bottom: 0;
+}
+
+.version {
+    grid-column: 2/3;
+    color: var(--ALTENLightGray);
+    background-color: var(--ALTENBlue);
+    height: 90%;
+}
+
+h2 {
+    margin: 0;
+}

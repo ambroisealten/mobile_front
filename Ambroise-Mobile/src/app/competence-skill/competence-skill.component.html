@@ -1,0 +1,48 @@
+<div>
+  <h4 class="titre">Compétences</h4>
+  <div class="tableau">
+      <div class="tabSkill title">
+        <p>Compétence</p>
+        <p>Note</p>
+      </div>
+      <ng-container *ngFor="let skillCompetence of skillCompetence; let i = index">
+        <ng-container *ngIf="i % 2 === 0">
+        <div class="tabSkill even">
+          <p>{{skillCompetence.name}}</p>
+          <p>{{skillCompetence.note}}</p>
+        </div>
+        </ng-container>
+      <ng-container *ngIf="i % 2 === 1">
+        <div class="tabSkill odd">
+            <p>{{skillCompetence.name}}</p>
+            <p>{{skillCompetence.note}}</p>
+          </div>
+      </ng-container>
+      </ng-container>
+</div>
+<div>
+    <h4 class="titre">SoftSkill</h4>
+      <div class="tableau">
+          <div class="tabSkill title">
+            <p>SoftSkill</p>
+            <p>Note</p>
+          </div>
+          <ng-container *ngFor="let softSkillCompetence of softSkillCompetence; let i = index">
+            <ng-container *ngIf="i % 2 === 0">
+            <div class="tabSkill even">
+              <p>{{softSkillCompetence.name}}</p>
+              <p>{{softSkillCompetence.note}}</p>
+            </div>
+            </ng-container>
+          <ng-container *ngIf="i % 2 === 1">
+            <div class="tabSkill odd">
+                <p>{{softSkillCompetence.name}}</p>
+                <p>{{softSkillCompetence.note}}</p>
+              </div>
+          </ng-container>
+          </ng-container>
+    </div>
+</div>
+</div>
+  
+
