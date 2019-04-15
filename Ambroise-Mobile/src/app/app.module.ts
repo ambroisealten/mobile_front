@@ -26,6 +26,8 @@ import { UiTemplateComponent } from './ui-template/ui-template.component';
 import { HeaderCompetenceMobileComponent } from './header-competence-mobile/header-competence-mobile.component';
 import { CompetenceService } from './services/competence.service';
 import { TabbarCompetenceComponent } from './tabbar-competence/tabbar-competence.component';
+import { TabbarComponent } from './tabbar/tabbar.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,6 +46,7 @@ import { TabbarCompetenceComponent } from './tabbar-competence/tabbar-competence
     CompetenceMatriceComponent,
     TabbarCompetenceComponent,
     HeaderCompetenceMobileComponent,
+    TabbarComponent,
   ],
   imports: [
     BrowserModule,
