@@ -9,15 +9,15 @@ import { CompetenceService } from '../services/competence.service';
 export class CompetenceSkillComponent implements OnInit {
 
   //ficheSkills: ficheSkill;
-  SkillCompetence: any[];
-  SoftSkillCompetence: any[];
+  skillCompetence: any[];
+  softSkillCompetence: any[];
 
   constructor(private competenceService: CompetenceService, private change:ChangeDetectorRef) { }
 
   ngOnInit() {
     //this.competenceService.currentSource.subscribe((data) => { this.updateData(data) ;this.change.detectChanges()});
-    this.SkillCompetence = this.competenceService.getSkillFromService(0);
-    this.SoftSkillCompetence = this.competenceService.getSoftSkillFromService(0);
+    this.skillCompetence = this.competenceService.getSkillFromService(0);
+    this.softSkillCompetence = this.competenceService.getSoftSkillFromService(0);
   }
 
   updateData(data){

@@ -2,20 +2,20 @@
   <h4 class="titre">Compétences</h4>
   <div class="tableau">
       <div class="tabSkill title">
-        <p>Nom de compétence</p>
+        <p>Compétence</p>
         <p>Note</p>
       </div>
-      <ng-container *ngFor="let SkillCompetence of SkillCompetence; let i = index">
+      <ng-container *ngFor="let skillCompetence of skillCompetence; let i = index">
         <ng-container *ngIf="i % 2 === 0">
         <div class="tabSkill even">
-          <p>{{SkillCompetence.name}}</p>
-          <p>{{SkillCompetence.note}}</p>
+          <p>{{skillCompetence.name}}</p>
+          <p>{{skillCompetence.note}}</p>
         </div>
         </ng-container>
       <ng-container *ngIf="i % 2 === 1">
         <div class="tabSkill odd">
-            <p>{{SkillCompetence.name}}</p>
-            <p>{{SkillCompetence.note}}</p>
+            <p>{{skillCompetence.name}}</p>
+            <p>{{skillCompetence.note}}</p>
           </div>
       </ng-container>
       </ng-container>
@@ -24,20 +24,20 @@
     <h4 class="titre">SoftSkill</h4>
       <div class="tableau">
           <div class="tabSkill title">
-            <p>Nom du SoftSkill</p>
+            <p>SoftSkill</p>
             <p>Note</p>
           </div>
-          <ng-container *ngFor="let SoftSkillCompetence of SoftSkillCompetence; let i = index">
+          <ng-container *ngFor="let softSkillCompetence of softSkillCompetence; let i = index">
             <ng-container *ngIf="i % 2 === 0">
             <div class="tabSkill even">
-              <p>{{SoftSkillCompetence.name}}</p>
-              <p>{{SoftSkillCompetence.note}}</p>
+              <p>{{softSkillCompetence.name}}</p>
+              <p>{{softSkillCompetence.note}}</p>
             </div>
             </ng-container>
           <ng-container *ngIf="i % 2 === 1">
             <div class="tabSkill odd">
-                <p>{{SoftSkillCompetence.name}}</p>
-                <p>{{SoftSkillCompetence.note}}</p>
+                <p>{{softSkillCompetence.name}}</p>
+                <p>{{softSkillCompetence.note}}</p>
               </div>
           </ng-container>
           </ng-container>
