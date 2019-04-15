@@ -5,6 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './competence-matrice.component.html',
   styleUrls: ['./competence-matrice.component.scss']
 })
+
+// Matrice class recuperation data 
+// @author Maxime Maquinghen
 export class CompetenceMatriceComponent implements OnInit {
 
   constructor() { }
