@@ -34,10 +34,10 @@ export class TabbarForumComponent {
   tabLinkList = {
     "mission" : [
       new TabLink("Mobilité", "assets/images/téléchargement.png", this.forumTab1),
-      new TabLink("Canard", "assets/images/téléchargement.png", this.forumTab2),
-      new TabLink("Poulet", "assets/images/téléchargement.png", this.forumTab3),
-      new TabLink("Cochon", "assets/images/téléchargement.png", this.forumTab4),
-      new TabLink("Dinde", "assets/images/téléchargement.png", this.forumTab5),
+      new TabLink("Contrat", "assets/images/téléchargement.png", this.forumTab2),
+      new TabLink("Formation", "assets/images/téléchargement.png", this.forumTab3),
+      new TabLink("Compétences", "assets/images/téléchargement.png", this.forumTab4),
+      new TabLink("Compléments", "assets/images/téléchargement.png", this.forumTab5),
     ]
   }
 }
