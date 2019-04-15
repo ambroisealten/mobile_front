@@ -62,7 +62,7 @@ import { TabbarCompetenceComponent } from './tabbar-competence/tabbar-competence
     ForumFormPage2Component,
     ForumFormPage3Component,
     ForumFormPage4Component,
-    ForumFormPage5Component
+    ForumFormPage5Component,
     CompetenceSkillComponent,
     CompetenceIdentityComponent,
     CompetenceCvComponent,
