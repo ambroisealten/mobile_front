@@ -37,7 +37,7 @@ import { TabbarCompetenceComponent } from './tabbar-competence/tabbar-competence
     ForumFormPage3Component,
     ForumFormPage4Component,
     ForumFormPage5Component,
-    UiTemplateComponent
+    UiTemplateComponent,
     CompetenceSkillComponent,
     CompetenceIdentityComponent,
     CompetenceCvComponent,
