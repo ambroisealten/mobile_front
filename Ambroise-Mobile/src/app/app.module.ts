@@ -54,6 +54,7 @@ import { TabbarComponent } from './tabbar/tabbar.component';
   ],
   providers: [
     CompetenceService,
+    MenuService
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
