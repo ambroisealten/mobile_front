@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ForumFormPage1Component } from '../forum-form-page1/forum-form-page1.component';
 import { ForumFormPage2Component } from '../forum-form-page2/forum-form-page2.component';
 import { ForumFormPage3Component } from '../forum-form-page3/forum-form-page3.component';
@@ -18,10 +18,11 @@ export class TabLink {
 }
 
 @Component({
-  selector: 'app-tabbar',
+  selector: 'ons-page',
   templateUrl: './tabbar.component.html',
   styleUrls: ['./tabbar.component.scss']
 })
+
 export class TabbarComponent {
   forumTab1 = ForumFormPage1Component;
   forumTab2 = ForumFormPage2Component;

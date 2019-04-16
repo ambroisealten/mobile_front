@@ -16,7 +16,7 @@ import { TabbarComponent } from './tabbar/tabbar.component';
 export class AppComponent {
   sideMenu = SideMenuComponent;
   burgerMenu = MenuBurgerComponent;
-  tabBar = TabbarForumComponent;
+  tabBar = TabbarComponent;
 
   title = 'Ambroise-Mobile';
   @ViewChild('splitter') splitter;

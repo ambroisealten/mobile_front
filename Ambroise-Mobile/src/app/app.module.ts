@@ -71,6 +71,7 @@ import { TabbarComponent } from './tabbar/tabbar.component';
     CompetenceIdentityComponent,
     CompetenceCvComponent,
     CompetenceMatriceComponent,
+    TabbarComponent,
     TabbarCompetenceComponent
   ],
 })
