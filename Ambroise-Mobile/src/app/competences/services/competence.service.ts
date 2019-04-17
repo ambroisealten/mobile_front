@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Observable, BehaviorSubject  } from 'rxjs';
-import { LoggerService, LogLevel } from './logger.service';
-import { CompetenceIdentityComponent } from '../competence-identity/competence-identity.component';
-import { ficheCompetence } from '../class/ficheCompetence';
+import { BehaviorSubject  } from 'rxjs';
+import { ficheCompetence } from '../../class/ficheCompetence';
 //import { ficheSkill } from '../class/ficheSkill';
 
 

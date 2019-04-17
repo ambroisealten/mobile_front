@@ -1,12 +1,11 @@
-import { LoggerService, LogLevel } from './services/logger.service';
+import { LoggerService, LogLevel } from './login/services/logger.service';
 import { environment } from 'src/environments/environment';
 import { Component, ViewChild } from '@angular/core';
 import { MenuService } from './services/MenuService.service';
-import { SideMenuComponent } from './side-menu/side-menu.component';
+import { SideMenuComponent } from './side-menu/components/side-menu.component';
 import { MenuBurgerComponent } from './header/components/menu-burger/menu-burger.component';
-import { TabbarForumComponent } from './footer/components/tabbar-forum/tabbar-forum.component';
-import { TabbarCompetenceComponent } from './footer/components/tabbar-competence/tabbar-competence.component';
-import { TabbarComponent } from './footer/components/tabbar/tabbar.component';
+import { FooterComponent } from './footer/components/footer/footer.component';
+
 
 @Component({
   selector: 'app-root',
@@ -16,7 +15,7 @@ import { TabbarComponent } from './footer/components/tabbar/tabbar.component';
 export class AppComponent {
   sideMenu = SideMenuComponent;
   burgerMenu = MenuBurgerComponent;
-  tabBar = TabbarComponent;
+  tabBar = FooterComponent;
 
   title = 'Ambroise-Mobile';
   @ViewChild('splitter') splitter;

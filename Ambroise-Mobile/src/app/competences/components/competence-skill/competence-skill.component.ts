@@ -1,5 +1,5 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
-import { CompetenceService } from '../services/competence.service';
+import { CompetenceService } from '../../services/competence.service';
 
 @Component({
   selector: 'ons-page',

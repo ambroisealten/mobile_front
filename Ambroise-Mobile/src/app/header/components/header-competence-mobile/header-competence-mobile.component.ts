@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CompetenceService } from '../../../services/competence.service';
-import { CompetenceIdentityComponent } from '../competence-identity/competence-identity.component';
-import { LoggerService, LogLevel } from '../../../services/logger.service';
-
+import { CompetenceService } from '../../../competences/services/competence.service';
 
 @Component({
   selector: 'app-header-competence-mobile',

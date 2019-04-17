@@ -20,7 +20,7 @@ import { FooterModule } from './footer/footer.module';
 import { HeaderModule } from './header/header.module';
 
 // SERVICE
-import { LoggerService } from './services/logger.service';
+import { LoggerService } from './login/services/logger.service';
 
 
 @NgModule({

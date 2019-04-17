@@ -1,7 +1,6 @@
-import { Component, OnInit, Input, ChangeDetectorRef } from '@angular/core';
-import { CompetenceService } from '../services/competence.service';
-import { LoggerService, LogLevel } from '../services/logger.service';
-import { ficheCompetence } from '../class/ficheCompetence';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ficheCompetence } from 'src/app/class/ficheCompetence';
+import { CompetenceService } from '../../services/competence.service';
 
 @Component({
   selector: 'ons-page',

@@ -13,6 +13,7 @@ import { CompetenceSkillComponent } from './components/competence-skill/competen
 
 //  FEATURE MODULE NEEDED
 import { HeaderModule } from '../header/header.module';
+import { CompetenceService } from './services/competence.service';
 
 
 @NgModule({
@@ -26,6 +27,9 @@ import { HeaderModule } from '../header/header.module';
     CommonModule,
     CompetencesRoutingModule,
     HeaderModule,
+  ],
+  providers: [
+    CompetenceService
   ]
 })
 export class CompetencesModule { }
