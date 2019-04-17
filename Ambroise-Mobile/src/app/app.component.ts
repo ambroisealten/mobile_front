@@ -3,10 +3,10 @@ import { environment } from 'src/environments/environment';
 import { Component, ViewChild } from '@angular/core';
 import { MenuService } from './services/MenuService.service';
 import { SideMenuComponent } from './side-menu/side-menu.component';
-import { MenuBurgerComponent } from './header/menu-burger/menu-burger.component';
-import { TabbarForumComponent } from './footer/tabbar-forum/tabbar-forum.component';
-import { TabbarCompetenceComponent } from './footer/tabbar-competence/tabbar-competence.component';
-import { TabbarComponent } from './footer/tabbar/tabbar.component';
+import { MenuBurgerComponent } from './header/components/menu-burger/menu-burger.component';
+import { TabbarForumComponent } from './footer/components/tabbar-forum/tabbar-forum.component';
+import { TabbarCompetenceComponent } from './footer/components/tabbar-competence/tabbar-competence.component';
+import { TabbarComponent } from './footer/components/tabbar/tabbar.component';
 
 @Component({
   selector: 'app-root',

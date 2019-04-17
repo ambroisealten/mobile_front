@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { CompetenceService } from '../services/competence.service';
+import { CompetenceService } from '../../../services/competence.service';
 import { CompetenceIdentityComponent } from '../competence-identity/competence-identity.component';
-import { LoggerService, LogLevel } from '../services/logger.service';
+import { LoggerService, LogLevel } from '../../../services/logger.service';
 
 
 @Component({
