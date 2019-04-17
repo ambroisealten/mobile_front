@@ -27,6 +27,7 @@ import { HeaderCompetenceMobileComponent } from './header-competence-mobile/head
 import { CompetenceService } from './services/competence.service';
 import { TabbarCompetenceComponent } from './tabbar-competence/tabbar-competence.component';
 import { TabbarComponent } from './tabbar/tabbar.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { TabbarComponent } from './tabbar/tabbar.component';
   imports: [
     BrowserModule,
     OnsenModule,
+    AppRoutingModule,
   ],
   providers: [
     CompetenceService,
