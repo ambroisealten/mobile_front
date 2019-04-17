@@ -12,10 +12,10 @@ import { OnsenModule } from 'ngx-onsenui';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { SideMenuComponent } from './side-menu/side-menu.component';
-import { MenuBurgerComponent } from './menu-burger/menu-burger.component';
+import { MenuBurgerComponent } from './header/menu-burger/menu-burger.component';
 import { MenuService } from './services/MenuService.service';
 
-import { TabbarForumComponent } from './tabbar-forum/tabbar-forum.component';
+import { TabbarForumComponent } from './footer/tabbar-forum/tabbar-forum.component';
 import { ForumFormPage1Component } from './forum-form-page1/forum-form-page1.component';
 import { ForumFormPage2Component } from './forum-form-page2/forum-form-page2.component';
 import { ForumFormPage3Component } from './forum-form-page3/forum-form-page3.component';
@@ -25,8 +25,8 @@ import { UiTemplateComponent } from './ui-template/ui-template.component';
 
 import { HeaderCompetenceMobileComponent } from './header-competence-mobile/header-competence-mobile.component';
 import { CompetenceService } from './services/competence.service';
-import { TabbarCompetenceComponent } from './tabbar-competence/tabbar-competence.component';
-import { TabbarComponent } from './tabbar/tabbar.component';
+import { TabbarCompetenceComponent } from './footer/tabbar-competence/tabbar-competence.component';
+import { TabbarComponent } from './footer/tabbar/tabbar.component';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({

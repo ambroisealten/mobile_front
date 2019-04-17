@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MenuService } from '../services/MenuService.service';
+import { MenuService } from '../../services/MenuService.service';
 
 @Component({
   selector: 'ons-page',
