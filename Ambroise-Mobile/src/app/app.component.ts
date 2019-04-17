@@ -1,5 +1,3 @@
-import { LoggerService, LogLevel } from './login/services/logger.service';
-import { environment } from 'src/environments/environment';
 import { Component, ViewChild } from '@angular/core';
 import { MenuService } from './services/MenuService.service';
 import { SideMenuComponent } from './side-menu/components/side-menu.component';

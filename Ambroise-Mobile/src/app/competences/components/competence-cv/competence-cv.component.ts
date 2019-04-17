@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'ons-page',
   templateUrl: './competence-cv.component.html',
-  styleUrls: ['./competence-cv.component.css']
+  styleUrls: ['./competence-cv.component.scss']
 })
 
 // Cv recuperation Class

@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { CompetenceSkillComponent } from '../competence-skill/competence-skill.component';
-import { CompetenceIdentityComponent } from '../competence-identity/competence-identity.component';
-import { CompetenceCvComponent } from '../competence-cv/competence-cv.component';
-import { CompetenceMatriceComponent } from '../competence-matrice/competence-matrice.component';
+import { CompetenceIdentityComponent } from 'src/app/competences/components/competence-identity/competence-identity.component';
+import { CompetenceSkillComponent } from 'src/app/competences/components/competence-skill/competence-skill.component';
+import { CompetenceMatriceComponent } from 'src/app/competences/components/competence-matrice/competence-matrice.component';
+import { CompetenceCvComponent } from 'src/app/competences/components/competence-cv/competence-cv.component';
+
 
 @Component({
   selector: 'ons-page',

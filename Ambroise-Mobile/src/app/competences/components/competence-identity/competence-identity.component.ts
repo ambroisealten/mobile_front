@@ -5,7 +5,7 @@ import { CompetenceService } from '../../services/competence.service';
 @Component({
   selector: 'ons-page',
   templateUrl: './competence-identity.component.html',
-  styleUrls: ['./competence-identity.component.css']
+  styleUrls: ['./competence-identity.component.scss']
 })
 // Récupération des données pour l'affichage de la fiche d'identité 
 // @author Maxime Maquinghen

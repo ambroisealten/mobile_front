@@ -14,38 +14,32 @@ import { AppComponent } from './app.component';
 //  IMPORT FEATURE MODULE
 import { MissionsModule } from './missions/missions.module';
 import { ForumModule } from './forum/forum.module';
-import { CompetencesModule } from './competences/competences.module';
 import { LoginModule } from './login/login.module';
 import { FooterModule } from './footer/footer.module';
 import { HeaderModule } from './header/header.module';
 
 // SERVICE
 import { LoggerService } from './login/services/logger.service';
-
+import { MenuService } from './services/MenuService.service';
+import { SideMenuComponent } from './side-menu/components/side-menu.component';
+import { FooterComponent } from './footer/components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    SideMenuComponent
   ],
   imports: [
     BrowserModule,
     OnsenModule,
     AppRoutingModule,
-
-    LoginModule,
-    CompetencesModule,
-    ForumModule,
-    MissionsModule,
-    HeaderModule,
-    FooterModule,
-    BrowserModule,
-    AppRoutingModule,
   ],
   providers: [
     LoggerService,
+    MenuService
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  entryComponents: [],
+  entryComponents: [SideMenuComponent],
 })
 export class AppModule { }

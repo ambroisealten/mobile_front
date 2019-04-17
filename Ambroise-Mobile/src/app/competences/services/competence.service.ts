@@ -3,11 +3,6 @@ import { BehaviorSubject  } from 'rxjs';
 import { ficheCompetence } from '../../class/ficheCompetence';
 //import { ficheSkill } from '../class/ficheSkill';
 
-
-@Injectable({
-  providedIn: 'root'
-})
-
 export class CompetenceService {
 
   private versionSource = new BehaviorSubject(1);
