@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { CompetenceIdentityComponent } from 'src/app/competences/components/competence-identity/competence-identity.component';
-import { CompetenceSkillComponent } from 'src/app/competences/components/competence-skill/competence-skill.component';
-import { CompetenceMatriceComponent } from 'src/app/competences/components/competence-matrice/competence-matrice.component';
-import { CompetenceCvComponent } from 'src/app/competences/components/competence-cv/competence-cv.component';
+import { CompetenceIdentityComponent } from '../../../../app/competences/components/competence-identity/competence-identity.component';
+import { CompetenceSkillComponent } from '../../../../app/competences/components/competence-skill/competence-skill.component';
+import { CompetenceMatriceComponent } from '../../../../app/competences/components/competence-matrice/competence-matrice.component';
+import { CompetenceCvComponent } from '../../../../app/competences/components/competence-cv/competence-cv.component';
 
 
 @Component({

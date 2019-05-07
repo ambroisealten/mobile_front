@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
-import { LoggerService, LogLevel } from 'src/app/services/logger.service';
+import { LoggerService, LogLevel } from '../../../app/services/logger.service';
 import { timeout, catchError, map } from 'rxjs/operators';
-import { environment } from 'src/environments/environment';
+import { environment } from '../../../environments/environment';
 import { SkillsSheet } from '../models/skillsSheet';
-import { ErrorService } from 'src/app/services/error.service';
+import { ErrorService } from '../../../app/services/error.service';
 
 @Injectable()
 /**

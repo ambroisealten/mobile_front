@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject  } from 'rxjs';
-import { ficheCompetence } from '../../class/ficheCompetence';
+//import { ficheCompetence } from '../../class/ficheCompetence';
 //import { ficheSkill } from '../class/ficheSkill';
 
 export class CompetenceService {
@@ -132,7 +132,7 @@ export class CompetenceService {
   getFicheCompetence(id){
     for(let i = 0; i<this.ficheCompetence.length;i++){
       if(this.ficheCompetence[i].id == id){
-        return new ficheCompetence(this.ficheCompetence[i]);
+        //return new ficheCompetence(this.ficheCompetence[i]);
       }
     }
     return null;

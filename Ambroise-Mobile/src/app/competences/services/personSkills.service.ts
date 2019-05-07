@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { environment } from 'src/environments/environment';
+import { environment } from '../../../environments/environment';
 import { Person, PersonRole } from '../models/person';
 import { catchError, timeout } from 'rxjs/operators';
-import { LoggerService, LogLevel } from 'src/app/services/logger.service';
-import { ErrorService } from 'src/app/services/error.service';
+import { LoggerService, LogLevel } from '../../../app/services/logger.service';
+import { ErrorService } from '../../../app/services/error.service';
 
 @Injectable()
 /**

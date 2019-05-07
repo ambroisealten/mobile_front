@@ -17,6 +17,7 @@ import { ForumModule } from './forum/forum.module';
 import { LoginModule } from './login/login.module';
 import { FooterModule } from './footer/footer.module';
 import { HeaderModule } from './header/header.module';
+import Framework7, { Device, Request} from '../../node_modules/framework7';
 
 // SERVICE
 import { LoggerService } from './login/services/logger.service';
@@ -27,12 +28,14 @@ import { ErrorService } from './services/error.service';
 @NgModule({
   declarations: [
     AppComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    Framework7
   ],
   imports: [
     BrowserModule,
     OnsenModule,
     AppRoutingModule,
+    Framework7,
   ],
   providers: [
     LoggerService,

@@ -1,5 +1,5 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { ficheCompetence } from 'src/app/class/ficheCompetence';
+//import { ficheCompetence } from '../../app/class/ficheCompetence';
 import { CompetenceService } from '../../services/competence.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { CompetenceService } from '../../services/competence.service';
 // @author Maxime Maquinghen
 export class CompetenceIdentityComponent implements OnInit {
 
-  ficheCompetence: ficheCompetence;
+  //ficheCompetence: ficheCompetence;
   versionID: string;
   version: string;
 
@@ -27,7 +27,7 @@ export class CompetenceIdentityComponent implements OnInit {
   // OnInit: Update the ficheCompetence class with the new data received
   // @author Maxime Maquinghen
   updateData(data){
-    this.ficheCompetence =  this.competenceService.getFicheCompetence(data);
+    //this.ficheCompetence =  this.competenceService.getFicheCompetence(data);
   }
 
 }

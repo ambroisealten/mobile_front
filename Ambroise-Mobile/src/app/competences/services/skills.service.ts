@@ -3,10 +3,10 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { Skills } from '../models/skills';
 import { SkillsSheet } from '../models/skillsSheet';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
-import { environment } from 'src/environments/environment';
+import { environment } from '../../../environments/environment';
 import { timeout, catchError } from 'rxjs/operators';
-import { LoggerService, LogLevel } from 'src/app/services/logger.service';
-import { ErrorService } from 'src/app/services/error.service';
+import { LoggerService, LogLevel } from '../../../app/services/logger.service';
+import { ErrorService } from '../../../app/services/error.service';
 
 @Injectable()
 /**
