@@ -22,7 +22,7 @@ import { HeaderModule } from './header/header.module';
 import { LoggerService } from './login/services/logger.service';
 import { MenuService } from './services/MenuService.service';
 import { SideMenuComponent } from './side-menu/components/side-menu.component';
-import { FooterComponent } from './footer/components/footer/footer.component';
+import { ErrorService } from './services/error.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +36,8 @@ import { FooterComponent } from './footer/components/footer/footer.component';
   ],
   providers: [
     LoggerService,
-    MenuService
+    MenuService,
+    ErrorService
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

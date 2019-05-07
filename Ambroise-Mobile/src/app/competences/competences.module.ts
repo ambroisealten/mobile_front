@@ -13,10 +13,15 @@ import { CompetenceIdentityComponent } from './components/competence-identity/co
 import { CompetenceMatriceComponent } from './components/competence-matrice/competence-matrice.component';
 import { CompetenceSkillComponent } from './components/competence-skill/competence-skill.component';
 import { TabbarCompetenceComponent } from './components/tabbar-competence/tabbar-competence.component';
+import { InformationPersonComponent } from './components/information-person/information-person.component';
 
 //  FEATURE MODULE NEEDED
 import { HeaderModule } from '../header/header.module';
 import { CompetenceService } from './services/competence.service';
+import { PersonSkillsService } from './services/personSkills.service';
+import { SkillsService } from './services/skills.service';
+import { SkillsSheetService } from './services/skillsSheet.service';
+import { SkillsHomePageComponent } from './components/skills-home-page/skills-home-page.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +29,9 @@ import { CompetenceService } from './services/competence.service';
     CompetenceIdentityComponent,
     CompetenceMatriceComponent,
     CompetenceSkillComponent,
-    TabbarCompetenceComponent
+    TabbarCompetenceComponent,
+    SkillsHomePageComponent,
+    InformationPersonComponent
   ],
   imports: [
     CommonModule,
@@ -35,7 +42,10 @@ import { CompetenceService } from './services/competence.service';
   exports: [
   ],
   providers: [
-    CompetenceService
+    CompetenceService,
+    PersonSkillsService,
+    SkillsService,
+    SkillsSheetService
   ],
 
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
