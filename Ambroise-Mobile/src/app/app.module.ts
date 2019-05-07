@@ -1,49 +1,46 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { CompetenceSkillComponent } from './competence-skill/competence-skill.component';
-import { CompetenceIdentityComponent } from './competence-identity/competence-identity.component';
-import { CompetenceCvComponent } from './competence-cv/competence-cv.component';
-import { CompetenceMatriceComponent } from './competence-matrice/competence-matrice.component';
-
-
+//  IMPORT INTERNAL MODULE
+import { BrowserModule } from '@angular/platform-browser';
 import { OnsenModule } from 'ngx-onsenui';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
+//  ROUTING
+import { AppRoutingModule } from './app-routing.module';
 
+//  COMPONENT
+import { AppComponent } from './app.component';
 
-import { TabbarCompetenceComponent } from './tabbar-competence/tabbar-competence.component';
-import { CompetenceService } from './services/competence.service';
-import { HeaderCompetenceMobileComponent } from './header-competence-mobile/header-competence-mobile.component';
+//  IMPORT FEATURE MODULE
+import { MissionsModule } from './missions/missions.module';
+import { ForumModule } from './forum/forum.module';
+import { LoginModule } from './login/login.module';
+import { FooterModule } from './footer/footer.module';
+import { HeaderModule } from './header/header.module';
 
-
+// SERVICE
+import { LoggerService } from './login/services/logger.service';
+import { MenuService } from './services/MenuService.service';
+import { SideMenuComponent } from './side-menu/components/side-menu.component';
+import { ErrorService } from './services/error.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CompetenceSkillComponent,
-    CompetenceIdentityComponent,
-    CompetenceCvComponent,
-    CompetenceMatriceComponent,
-    TabbarCompetenceComponent,
-    HeaderCompetenceMobileComponent,
+    SideMenuComponent
   ],
   imports: [
     BrowserModule,
     OnsenModule,
+    AppRoutingModule,
   ],
   providers: [
-    CompetenceService,
+    LoggerService,
+    MenuService,
+    ErrorService
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  entryComponents: [
-    CompetenceSkillComponent,
-    CompetenceIdentityComponent,
-    CompetenceCvComponent,
-    CompetenceMatriceComponent,
-    TabbarCompetenceComponent
-  ],
+  entryComponents: [SideMenuComponent],
 })
 export class AppModule { }
